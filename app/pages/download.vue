@@ -37,6 +37,44 @@
             <a href="https://www.printninja.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">PrintNinja</a>, 
             but people are free to take them to their local printer too.
           </p>
+          <button
+            @click="showPrintNinjaSettings = !showPrintNinjaSettings"
+            class="mt-4 inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold font-chewy transition-colors"
+          >
+            <span>{{ showPrintNinjaSettings ? 'Hide' : 'Show' }} PrintNinja Settings</span>
+            <svg
+              :class="{ 'rotate-180': showPrintNinjaSettings }"
+              class="w-5 h-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div
+            v-show="showPrintNinjaSettings"
+            class="mt-4 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700"
+          >
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-3 font-semibold font-chewy">
+              For PrintNinja, use the following settings:
+            </p>
+            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 text-lg space-y-2">
+              <li>Go to <a href="https://calculator.printninja.com/card-game-quote" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">this page</a> (it's for at least 500 decks quantity).</li>
+              <li>Deck Size: Poker (2.5" x 3.5")</li>
+              <li>Card Count Per Deck: 52</li>
+              <li>Card Stock: Blue Core Standard - 280gsm</li>
+              <li>Card Backs: 1</li>
+              <li>Finish Style: Gloss by default, then select Varnish (unless you want Lamination)</li>
+              <li>Deck Packaging: Tuck Box (unless you want just shrink wrapped - the price is the same)</li>
+              <li>Tuck Box Packaging Details: You can leave defaults or pick whichever you want</li>
+              <li>Packaging Add-Ons: Don't choose any</li>
+              <li>Specialty Options: Don't choose any</li>
+              <li>Instructions: None</li>
+              <li>Quantity: 500 or more</li>
+              <li>Proofing: Electronic proof</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -56,7 +94,9 @@
               <div class="flex items-start gap-4">
                 <div>
                   <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2 font-chewy">Deguma Edition</h3>
-                  <p class="text-gray-600 dark:text-gray-400 text-lg">The first edition of Nouns: The Card Game, featuring character illustrations by deguma.eth in his distinctive style.</p>
+                  <p class="text-gray-600 dark:text-gray-400 text-lg">
+                    The first edition of Nouns: The Card Game, featuring character illustrations by deguma.eth in his distinctive style.
+                  </p>
                 </div>
               </div>
               <a
@@ -117,6 +157,9 @@ const route = useRoute()
 // Get the base URL - in production this should be your actual domain
 const requestURL = useRequestURL()
 const baseUrl = requestURL.origin
+
+// Toggle state for PrintNinja settings
+const showPrintNinjaSettings = ref(false)
 
 useHead({
   title: 'Download and Print',
