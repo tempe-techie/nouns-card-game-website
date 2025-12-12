@@ -33,29 +33,20 @@
 
     <div class="mb-16 relative z-10">
       <div class="flex items-center gap-4 mb-8">
-        <img src="/img/characters/approved.svg" alt="Action Cards" class="w-16 h-16 animate-bounce-slow" />
         <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">Action Cards</h2>
       </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
         <div
           v-for="(card, index) in actionCards"
           :key="card.name"
           class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative"
         >
-          <div class="absolute top-0 right-0 w-20 h-20 opacity-5 group-hover:opacity-15 transition-opacity">
-            <img :src="`/img/characters/${getCharacterName(card.name)}.svg`" alt="" class="w-full h-full" />
-          </div>
           <div class="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700/50 dark:to-gray-800/50 relative">
-            <div class="absolute top-2 right-2 w-16 h-16 opacity-20">
-              <img :src="`/img/characters/${getCharacterName(card.name)}.svg`" alt="" class="w-full h-full" />
-            </div>
-            <div :class="['rounded-xl overflow-hidden shadow-lg', isDark ? 'bg-white p-2' : '']">
-              <img
-                :src="`/img/cards/${card.image}`"
-                :alt="card.name"
-                class="w-full h-auto rounded-xl group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
+            <img
+              :src="`/img/cards/${card.image}`"
+              :alt="card.name"
+              class="w-full h-auto rounded-xl group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
           <div class="p-6 relative z-10">
             <div class="flex items-center gap-3 mb-3">
@@ -74,7 +65,6 @@
 
     <div class="relative z-10">
       <div class="flex items-center gap-4 mb-8">
-        <img src="/img/characters/lucky.svg" alt="Value Cards" class="w-16 h-16 animate-bounce-slow" />
         <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">Value Cards</h2>
       </div>
       <div class="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-700 mb-8 shadow-lg">
@@ -95,24 +85,18 @@
           :key="card.name"
           class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 hover:border-green-400 dark:hover:border-green-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative"
         >
-          <div class="absolute top-0 right-0 w-16 h-16 opacity-5 group-hover:opacity-15 transition-opacity">
-            <img src="/img/characters/lucky.svg" alt="" class="w-full h-full" />
-          </div>
           <div class="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700/50 dark:to-gray-800/50">
-            <div :class="['rounded-xl overflow-hidden shadow-lg', isDark ? 'bg-white p-2' : '']">
-              <img
-                :src="`/img/cards/${card.image}`"
-                :alt="card.name"
-                class="w-full h-auto rounded-xl group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
+            <img
+              :src="`/img/cards/${card.image}`"
+              :alt="card.name"
+              class="w-full h-auto rounded-xl group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
           <div class="p-6 text-center relative z-10">
             <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full mb-3 shadow-lg">
               <span class="text-2xl font-bold text-white font-chewy">{{ card.points }}</span>
             </div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white font-chewy">{{ card.name }}</h3>
-            <p class="text-gray-600 dark:text-gray-400 mt-2 font-motley">{{ card.points }} point{{ card.points !== 1 ? 's' : '' }}</p>
           </div>
         </div>
       </div>

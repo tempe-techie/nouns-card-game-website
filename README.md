@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# Nouns: The Card Game
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A website for the Nouns card game.
 
 ## Setup
 
