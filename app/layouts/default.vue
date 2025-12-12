@@ -108,8 +108,8 @@
               <img src="/img/characters/thief.svg" alt="" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
             </div>
           </div>
-          <p class="text-center text-gray-600 dark:text-gray-400 font-motley">
-            © 2025 Nouns: The Card Game. Developed by TempeTechie.eth
+          <p class="text-center text-gray-600 dark:text-gray-400">
+            CC0 2025 Nouns: The Card Game. Developed by <a href="https://farcaster.xyz/tempetechie.eth" target="_blank" rel="noopener noreferrer" class="hover:underline font-semibold font-chewy">Tempe Techie</a>
           </p>
         </div>
       </footer>

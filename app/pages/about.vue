@@ -19,7 +19,7 @@
     <div class="text-center mb-12 relative z-10">
       <div class="inline-block mb-6">
         <div class="relative">
-          <img src="/img/characters/approved.svg" alt="About" class="w-24 h-24 md:w-32 md:h-32 mx-auto drop-shadow-2xl animate-bounce-slow" />
+          <img src="/img/characters/crystal-ball.svg" alt="About" class="w-24 h-24 md:w-32 md:h-32 mx-auto drop-shadow-2xl animate-bounce-slow" />
           <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
         </div>
       </div>
@@ -31,18 +31,21 @@
     <section class="mb-12 relative z-10">
       <div class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-700 shadow-lg">
         <div class="flex items-start gap-4 mb-6">
-          <img src="/img/characters/approved.svg" alt="Nouns" class="w-16 h-16 flex-shrink-0" />
-          <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">About Nouns</h2>
+          <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-motley">ABOUT NOUNS</h2>
         </div>
         <div class="prose prose-lg dark:prose-invert max-w-none">
-          <p class="text-gray-700 dark:text-gray-300 mb-4 font-motley text-lg leading-relaxed">
-            Nouns is an infinite work of art (one Noun, everyday, forever) and community-owned brand that makes a positive impact by funding ideas and fostering collaboration. From collectors and technologists, to non-profits and brands, Nouns is for everyone.
+          <p class="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
+            <a href="https://nouns.wtf/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">Nouns</a> 
+            is an infinite work of art (one Noun, everyday, forever) and community-owned brand that makes a positive impact by 
+            <a href="https://nouns.world/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">funding ideas and fostering collaboration</a>. 
+            From collectors and technologists, to non-profits and brands, Nouns is for everyone.
           </p>
-          <p class="text-gray-700 dark:text-gray-300 mb-4 font-motley text-lg leading-relaxed">
-            Nouns DAO is a decentralized autonomous organization on the Ethereum blockchain. Each day, a unique Noun is generated and auctioned, with proceeds funding various community-driven projects. Members of the DAO, who own Nouns, participate in governance and decision-making processes that shape the future of the Nouns ecosystem.
-          </p>
-          <p class="text-gray-700 dark:text-gray-300 font-motley text-lg leading-relaxed">
-            The Nouns project represents a new model for community ownership and creative collaboration, where the value generated through daily auctions supports innovative ideas and initiatives that benefit the broader community.
+          <p class="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
+            Nouns DAO is a decentralized autonomous organization on the Ethereum blockchain. Each day, a unique Noun is 
+            <a href="https://www.probe.wtf/en-US/nouns" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">generated and auctioned</a>
+            , with proceeds funding various community-driven projects. Members of the DAO, who own Nouns, 
+            <a href="https://www.nouns.camp/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">participate in governance</a>
+            and decision-making processes that shape the future of the Nouns ecosystem.
           </p>
         </div>
       </div>
@@ -51,15 +54,21 @@
     <section class="mb-12 relative z-10">
       <div class="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl p-8 border-2 border-purple-200 dark:border-purple-700 shadow-lg">
         <div class="flex items-start gap-4 mb-6">
-          <img src="/img/characters/birthday.svg" alt="Game" class="w-16 h-16 flex-shrink-0" />
-          <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">About the Game</h2>
+          <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-motley">ABOUT THE GAME</h2>
         </div>
-        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-sm">
-          <p class="text-gray-700 dark:text-gray-300 mb-4 font-motley text-lg leading-relaxed">
-            <strong class="text-gray-900 dark:text-white font-chewy">Nouns: The Card Game</strong> was developed by <strong class="text-gray-900 dark:text-white font-chewy">TempeTechie.eth</strong>, who created the game rules, gameplay mechanics, and chose characters for each card. The game brings the iconic Nouns characters to life in an engaging card game format that combines strategy, luck, and social interaction.
+        <div class="prose prose-lg dark:prose-invert max-w-none">
+          <p class="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
+            <em>Nouns: The Card Game</em> was developed by 
+            <a href="https://farcaster.xyz/tempetechie.eth" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">Tempe Techie</a>, 
+            who created the game rules, gameplay mechanics, chose characters for each card and developed the website. 
+            The game brings the iconic Nouns characters to life in an engaging card game format that combines strategy, luck and 
+            social interaction.
           </p>
-          <p class="text-gray-700 dark:text-gray-300 font-motley text-lg leading-relaxed">
-            TempeTechie.eth works with various designers to create multiple editions of the game, each featuring unique artistic interpretations of the Nouns characters. The first designer to collaborate on the project is <strong class="text-gray-900 dark:text-white font-chewy">deguma.eth</strong>, who created the character illustrations for the Deguma Edition in his own distinctive style.
+          <p class="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+            Tempe Techie works with various designers to create multiple editions of the game, each featuring unique artistic 
+            interpretations of the Nouns characters. The first designer to collaborate on the project is 
+            <a href="https://farcaster.xyz/deguma" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">deguma.eth</a>, 
+            who created the character illustrations for the Deguma Edition in his own distinctive style.
           </p>
         </div>
       </div>
@@ -68,25 +77,26 @@
     <section class="relative z-10">
       <div class="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-700 shadow-lg">
         <div class="flex items-start gap-4 mb-6">
-          <img src="/img/characters/crystal-ball.svg" alt="Credits" class="w-16 h-16 flex-shrink-0" />
-          <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">Credits</h2>
+          <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-motley">CREDITS</h2>
         </div>
         <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-sm">
           <div class="space-y-6">
             <div class="flex items-start gap-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg">
-              <img src="/img/characters/shuffle.svg" alt="Development" class="w-12 h-12 flex-shrink-0" />
+              <img src="/img/characters/crystal-ball.svg" alt="Development" class="w-12 h-12 flex-shrink-0" />
               <div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 font-chewy">Game Development</h3>
-                <p class="text-gray-700 dark:text-gray-300 font-motley text-lg">TempeTechie.eth</p>
-                <p class="text-sm text-gray-600 dark:text-gray-400 font-motley mt-1">Game rules, gameplay design, and character selection</p>
+                <p class="text-gray-700 dark:text-gray-300 text-lg">
+                  <a href="https://farcaster.xyz/tempetechie.eth" target="_blank" rel="noopener noreferrer" class="hover:underline font-semibold font-chewy">Tempe Techie</a>
+                </p>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Game rules, gameplay design and website</p>
               </div>
             </div>
             <div class="flex items-start gap-4 p-4 bg-gradient-to-r from-pink-50 to-purple-50 dark:from-pink-900/20 dark:to-purple-900/20 rounded-lg">
-              <img src="/img/characters/thief.svg" alt="Design" class="w-12 h-12 flex-shrink-0" />
+              <img src="/img/characters/fork.svg" alt="Design" class="w-12 h-12 flex-shrink-0" />
               <div>
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2 font-chewy">Deguma Edition</h3>
-                <p class="text-gray-700 dark:text-gray-300 font-motley text-lg">deguma.eth</p>
-                <p class="text-sm text-gray-600 dark:text-gray-400 font-motley mt-1">Character illustrations and design</p>
+                <p class="text-gray-700 dark:text-gray-300 text-lg"><a href="https://farcaster.xyz/deguma" target="_blank" rel="noopener noreferrer" class="hover:underline font-semibold font-chewy">deguma.eth</a></p>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Character illustrations and design</p>
               </div>
             </div>
           </div>

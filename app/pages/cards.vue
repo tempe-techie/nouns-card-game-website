@@ -26,14 +26,14 @@
       <h1 class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 font-chewy bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
         Cards
       </h1>
-      <p class="text-xl text-gray-600 dark:text-gray-400 font-motley">
+      <p class="text-xl text-gray-600 dark:text-gray-400">
         Discover all the action cards and value cards in the game
       </p>
     </div>
 
     <div class="mb-16 relative z-10">
       <div class="flex items-center gap-4 mb-8">
-        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">Action Cards</h2>
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-motley">ACTION CARDS</h2>
       </div>
       <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
         <div
@@ -51,12 +51,18 @@
           <div class="p-6 relative z-10">
             <div class="flex items-center gap-3 mb-3">
               <img :src="`/img/characters/${getCharacterName(card.name)}.svg`" alt="" class="w-10 h-10" />
-              <h3 class="text-2xl font-bold text-gray-900 dark:text-white font-chewy">{{ card.name }}</h3>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white font-motley uppercase">{{ card.name }}</h3>
             </div>
-            <p class="text-gray-700 dark:text-gray-300 mb-3 font-motley leading-relaxed">{{ card.description }}</p>
+            <p class="text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">{{ card.description }}</p>
             <div v-if="card.optionalRule" class="mt-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-xl border-l-4 border-blue-400 shadow-sm">
-              <p class="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2 font-chewy">✨ Optional Rule:</p>
-              <p class="text-sm text-blue-800 dark:text-blue-200 font-motley leading-relaxed">{{ card.optionalRule }}</p>
+              <p 
+                @click="toggleOptionalRule(card.name)" 
+                class="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2 font-chewy cursor-pointer hover:text-blue-700 dark:hover:text-blue-200 transition-colors flex items-center gap-2"
+              >
+                <span>✨ See Optional Rule:</span>
+                <span class="text-xs">{{ expandedOptionalRules[card.name] ? '▼' : '▶' }}</span>
+              </p>
+              <p v-if="expandedOptionalRules[card.name]" class="text-sm text-blue-800 dark:text-blue-200 leading-relaxed">{{ card.optionalRule }}</p>
             </div>
           </div>
         </div>
@@ -65,16 +71,15 @@
 
     <div class="relative z-10">
       <div class="flex items-center gap-4 mb-8">
-        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">Value Cards</h2>
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-motley">VALUE CARDS</h2>
       </div>
       <div class="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-700 mb-8 shadow-lg">
         <div class="flex items-start gap-4">
           <img src="/img/characters/crystal-ball.svg" alt="" class="w-12 h-12 flex-shrink-0" />
           <div>
-            <p class="text-lg text-gray-700 dark:text-gray-300 font-motley leading-relaxed">
-              The other cards are value cards which score points. These cards have nouns glasses (called "noggles") drawn on them. 
-              A 1 point card has 1 noggle glasses on it, a 2 points card has 2 noggles glasses, and so on. 
-              The person with the most points at the end, wins.
+            <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              Value cards are cards that give you points. They show pairs of Nouns glasses, also known as "noggles". 
+              A 1-point card has one pair, a 2-point card has two pairs, etc. Whoever has the most points at the end wins.
             </p>
           </div>
         </div>
@@ -110,6 +115,7 @@ export default {
   data() {
     return {
       isDark: false,
+      expandedOptionalRules: {},
       actionCards: [
         {
           name: 'Approved',
@@ -202,6 +208,9 @@ export default {
         'Fork': 'fork'
       }
       return nameMap[cardName] || 'approved'
+    },
+    toggleOptionalRule(cardName) {
+      this.expandedOptionalRules[cardName] = !this.expandedOptionalRules[cardName]
     }
   }
 }

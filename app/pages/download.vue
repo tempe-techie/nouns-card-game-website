@@ -32,7 +32,7 @@
       <div class="flex items-start gap-4">
         <img src="/img/characters/approved.svg" alt="Info" class="w-16 h-16 flex-shrink-0" />
         <div>
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 font-motley leading-relaxed">
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
             Anyone can download the print-ready PDF of the card game for free. The recommended place to print the cards is 
             <a href="https://www.printninja.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">PrintNinja</a>, 
             but people are free to take them to their local printer too.
@@ -43,7 +43,7 @@
 
     <div class="relative z-10">
       <div class="flex items-center gap-4 mb-8">
-        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">Editions</h2>
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-motley">EDITIONS</h2>
       </div>
       <div class="space-y-8">
 
@@ -56,7 +56,7 @@
               <div class="flex items-start gap-4">
                 <div>
                   <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2 font-chewy">Deguma Edition</h3>
-                  <p class="text-gray-600 dark:text-gray-400 font-motley text-lg">The first edition of Nouns: The Card Game, featuring character illustrations by deguma.eth in his distinctive style.</p>
+                  <p class="text-gray-600 dark:text-gray-400 text-lg">The first edition of Nouns: The Card Game, featuring character illustrations by deguma.eth in his distinctive style.</p>
                 </div>
               </div>
               <a
@@ -69,8 +69,8 @@
               </a>
             </div>
             <div class="pt-6 border-t border-gray-200 dark:border-gray-700 flex items-center gap-3">
-              <img src="/img/characters/shuffle.svg" alt="Designer" class="w-8 h-8 opacity-60" />
-              <p class="text-sm text-gray-600 dark:text-gray-400 font-motley">
+              <img src="/img/characters/fork.svg" alt="Designer" class="w-8 h-8 opacity-60" />
+              <p class="text-sm text-gray-600 dark:text-gray-400">
                 <span class="font-semibold font-chewy">Designer:</span> deguma.eth
               </p>
             </div>
@@ -86,7 +86,7 @@
               <div class="flex items-start gap-4">
                 <div>
                   <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2 font-chewy">Next Edition</h3>
-                  <p class="text-gray-600 dark:text-gray-400 font-motley text-lg">
+                  <p class="text-gray-600 dark:text-gray-400 text-lg">
                     In the works, stay tuned!
                   </p>
                 </div>
@@ -100,7 +100,7 @@
             </div>
             <div class="pt-6 border-t border-gray-200 dark:border-gray-700 flex items-center gap-3">
               <img src="/img/characters/shuffle.svg" alt="Designer" class="w-8 h-8 opacity-60" />
-              <p class="text-sm text-gray-600 dark:text-gray-400 font-motley">
+              <p class="text-sm text-gray-600 dark:text-gray-400">
                 <span class="font-semibold font-chewy">Designer:</span> TBD
               </p>
             </div>

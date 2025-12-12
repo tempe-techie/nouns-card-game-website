@@ -34,7 +34,7 @@
         <h1 class="text-6xl md:text-8xl font-bold text-gray-900 dark:text-white mb-6 font-chewy bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
           Nouns: The Card Game
         </h1>
-        <p class="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto font-motley mb-8 animate-fade-in-delay">
+        <p class="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in-delay">
           A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents!
         </p>
         <div class="flex flex-wrap justify-center gap-4 mb-12">
@@ -47,8 +47,8 @@
             <span class="font-chewy text-gray-900 dark:text-white">Iconic Characters</span>
           </div>
           <div class="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-6 py-3 shadow-lg border border-gray-200 dark:border-gray-700">
-            <img src="/img/characters/crystal-ball.svg" alt="" class="w-8 h-8" />
-            <span class="font-chewy text-gray-900 dark:text-white">Free to Play</span>
+            <img src="/img/characters/thief.svg" alt="" class="w-8 h-8" />
+            <span class="font-chewy text-gray-900 dark:text-white">Free to Print</span>
           </div>
         </div>
       </div>
@@ -59,15 +59,12 @@
           to="/about"
           class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:-translate-y-2 relative overflow-hidden"
         >
-          <div class="absolute top-0 right-0 w-24 h-24 opacity-10 group-hover:opacity-20 transition-opacity">
-            <img src="/img/characters/approved.svg" alt="" class="w-full h-full" />
-          </div>
           <div class="relative z-10">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-              <img src="/img/characters/approved.svg" alt="About" class="w-10 h-10" />
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+              <img src="/img/characters/crystal-ball.svg" alt="About" class="w-10 h-10" />
             </div>
             <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3 font-chewy">About</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-motley">
+            <p class="text-gray-600 dark:text-gray-400">
               Learn about Nouns DAO and the game's development
             </p>
           </div>
@@ -77,15 +74,12 @@
           to="/rules"
           class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 dark:border-gray-700 hover:border-purple-400 dark:hover:border-purple-500 hover:-translate-y-2 relative overflow-hidden"
         >
-          <div class="absolute top-0 right-0 w-24 h-24 opacity-10 group-hover:opacity-20 transition-opacity">
-            <img src="/img/characters/shuffle.svg" alt="" class="w-full h-full" />
-          </div>
           <div class="relative z-10">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-              <img src="/img/characters/shuffle.svg" alt="Rules" class="w-10 h-10" />
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-pink-400 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
+              <img src="/img/characters/rejected.svg" alt="Rules" class="w-10 h-10" />
             </div>
             <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3 font-chewy">Rules</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-motley">
+            <p class="text-gray-600 dark:text-gray-400">
               Understand the game setup and how to play
             </p>
           </div>
@@ -95,15 +89,12 @@
           to="/cards"
           class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 dark:border-gray-700 hover:border-pink-400 dark:hover:border-pink-500 hover:-translate-y-2 relative overflow-hidden"
         >
-          <div class="absolute top-0 right-0 w-24 h-24 opacity-10 group-hover:opacity-20 transition-opacity">
-            <img src="/img/characters/thief.svg" alt="" class="w-full h-full" />
-          </div>
           <div class="relative z-10">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-pink-400 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
-              <img src="/img/characters/thief.svg" alt="Cards" class="w-10 h-10" />
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+              <img src="/img/characters/shuffle.svg" alt="Cards" class="w-10 h-10" />
             </div>
             <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3 font-chewy">Cards</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-motley">
+            <p class="text-gray-600 dark:text-gray-400">
               Explore all the cards and their abilities
             </p>
           </div>
@@ -113,15 +104,12 @@
           to="/download"
           class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border-2 border-gray-200 dark:border-gray-700 hover:border-green-400 dark:hover:border-green-500 hover:-translate-y-2 relative overflow-hidden"
         >
-          <div class="absolute top-0 right-0 w-24 h-24 opacity-10 group-hover:opacity-20 transition-opacity">
-            <img src="/img/characters/lucky.svg" alt="" class="w-full h-full" />
-          </div>
           <div class="relative z-10">
-            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
-              <img src="/img/characters/lucky.svg" alt="Download" class="w-10 h-10" />
+            <div class="w-16 h-16 mb-4 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+              <img src="/img/characters/thief.svg" alt="Download" class="w-10 h-10" />
             </div>
             <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3 font-chewy">Download</h2>
-            <p class="text-gray-600 dark:text-gray-400 font-motley">
+            <p class="text-gray-600 dark:text-gray-400">
               Get your free print-ready PDF
             </p>
           </div>
@@ -140,15 +128,15 @@
         </div>
         <div class="relative z-10">
           <div class="inline-block mb-6 animate-bounce-slow">
-            <img src="/img/characters/lucky.svg" alt="" class="w-24 h-24 drop-shadow-2xl" />
+            <img src="/img/noggles/noggles-purple.svg" alt="" class="w-24 h-24 drop-shadow-2xl" />
           </div>
           <h2 class="text-4xl md:text-5xl font-bold mb-4 font-chewy">Ready to Play?</h2>
-          <p class="text-xl md:text-2xl mb-8 font-motley">Download the game for free and start playing today!</p>
+          <p class="text-xl md:text-2xl mb-8">Download the game for free, print it out, and you’re ready to play!</p>
           <NuxtLink
             to="/download"
             class="inline-block bg-white text-blue-600 px-10 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl font-chewy text-lg"
           >
-            Download Now 🎮
+            Download &amp; Print
           </NuxtLink>
         </div>
       </div>
