@@ -162,14 +162,14 @@ const baseUrl = requestURL.origin
 const showPrintNinjaSettings = ref(false)
 
 useHead({
-  title: 'Download and Print',
+  title: 'Download and Print | Nouns: The Card Game',
   meta: [
     { name: 'description', content: 'Download and print Nouns: The Card Game for free. Get the print-ready PDF of the Deguma Edition featuring character illustrations by deguma.eth.' },
-    { property: 'og:title', content: 'Download and Print - Nouns: The Card Game' },
+    { property: 'og:title', content: 'Download and Print | Nouns: The Card Game' },
     { property: 'og:description', content: 'Download and print Nouns: The Card Game for free. Get the print-ready PDF of the Deguma Edition featuring character illustrations by deguma.eth.' },
     { property: 'og:url', content: `${baseUrl}${route.path}` },
     { property: 'og:image', content: `${baseUrl}/img/preview-fb.jpg` },
-    { name: 'twitter:title', content: 'Download and Print - Nouns: The Card Game' },
+    { name: 'twitter:title', content: 'Download and Print | Nouns: The Card Game' },
     { name: 'twitter:description', content: 'Download and print Nouns: The Card Game for free. Get the print-ready PDF of the Deguma Edition featuring character illustrations by deguma.eth.' },
     { name: 'twitter:image', content: `${baseUrl}/img/preview.jpg` }
   ]

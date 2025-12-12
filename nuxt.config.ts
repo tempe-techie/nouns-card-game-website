@@ -9,7 +9,6 @@ export default defineNuxtConfig({
         lang: 'en'
       },
       title: 'Nouns: The Card Game',
-      titleTemplate: '%s | Nouns: The Card Game',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -152,7 +152,7 @@ const requestURL = useRequestURL()
 const baseUrl = requestURL.origin
 
 useHead({
-  title: 'Home',
+  title: 'Nouns: The Card Game',
   meta: [
     { name: 'description', content: 'A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents! Free to download and print.' },
     { property: 'og:title', content: 'Nouns: The Card Game' },

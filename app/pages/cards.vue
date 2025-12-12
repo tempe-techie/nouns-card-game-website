@@ -117,14 +117,14 @@ const requestURL = useRequestURL()
 const baseUrl = requestURL.origin
 
 useHead({
-  title: 'Cards',
+  title: 'Cards | Nouns: The Card Game',
   meta: [
     { name: 'description', content: 'Discover all the action cards and value cards in Nouns: The Card Game. Learn about Approved, Rejected, Thief, Lucky, and more action cards, plus value cards from 1 to 5 points.' },
-    { property: 'og:title', content: 'Cards - Nouns: The Card Game' },
+    { property: 'og:title', content: 'Cards | Nouns: The Card Game' },
     { property: 'og:description', content: 'Discover all the action cards and value cards in Nouns: The Card Game. Learn about Approved, Rejected, Thief, Lucky, and more action cards, plus value cards from 1 to 5 points.' },
     { property: 'og:url', content: `${baseUrl}${route.path}` },
     { property: 'og:image', content: `${baseUrl}/img/preview-fb.jpg` },
-    { name: 'twitter:title', content: 'Cards - Nouns: The Card Game' },
+    { name: 'twitter:title', content: 'Cards | Nouns: The Card Game' },
     { name: 'twitter:description', content: 'Discover all the action cards and value cards in Nouns: The Card Game. Learn about Approved, Rejected, Thief, Lucky, and more action cards, plus value cards from 1 to 5 points.' },
     { name: 'twitter:image', content: `${baseUrl}/img/preview.jpg` }
   ]

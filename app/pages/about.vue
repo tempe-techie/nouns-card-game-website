@@ -114,14 +114,14 @@ const requestURL = useRequestURL()
 const baseUrl = requestURL.origin
 
 useHead({
-  title: 'About',
+  title: 'About | Nouns: The Card Game',
   meta: [
     { name: 'description', content: 'Learn about Nouns DAO, the decentralized autonomous organization on Ethereum, and the development of Nouns: The Card Game by Tempe Techie.' },
-    { property: 'og:title', content: 'About - Nouns: The Card Game' },
+    { property: 'og:title', content: 'About | Nouns: The Card Game' },
     { property: 'og:description', content: 'Learn about Nouns DAO, the decentralized autonomous organization on Ethereum, and the development of Nouns: The Card Game by Tempe Techie.' },
     { property: 'og:url', content: `${baseUrl}${route.path}` },
     { property: 'og:image', content: `${baseUrl}/img/preview-fb.jpg` },
-    { name: 'twitter:title', content: 'About - Nouns: The Card Game' },
+    { name: 'twitter:title', content: 'About | Nouns: The Card Game' },
     { name: 'twitter:description', content: 'Learn about Nouns DAO, the decentralized autonomous organization on Ethereum, and the development of Nouns: The Card Game by Tempe Techie.' },
     { name: 'twitter:image', content: `${baseUrl}/img/preview.jpg` }
   ]
