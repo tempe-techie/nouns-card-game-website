@@ -27,7 +27,7 @@
       <div class="text-center mb-20">
         <div class="inline-block mb-6 animate-bounce-slow">
           <div class="relative">
-            <img src="/img/characters/approved.svg" alt="Nouns Character" class="w-32 h-32 md:w-48 md:h-48 mx-auto drop-shadow-2xl" />
+            <img src="/img/noggles/noggles-red.svg" alt="Nouns Character" class="w-32 h-32 md:w-48 md:h-48 mx-auto drop-shadow-2xl" />
             <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
           </div>
         </div>

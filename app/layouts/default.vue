@@ -6,7 +6,7 @@
           <div class="flex justify-between items-center h-20">
             <div class="flex items-center gap-3">
               <div class="relative">
-                <img src="/img/characters/approved.svg" alt="Nouns Logo" class="w-12 h-12 animate-bounce-slow" />
+                <img src="/img/noggles/noggles-red.svg" alt="Nouns Logo" class="w-12 h-12 animate-bounce-slow" />
                 <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-lg opacity-30"></div>
               </div>
               <NuxtLink to="/" class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white font-chewy hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
