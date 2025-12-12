@@ -36,14 +36,14 @@
         <div class="prose prose-lg dark:prose-invert max-w-none">
           <p class="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
             <a href="https://nouns.wtf/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">Nouns</a> 
-            is an infinite work of art (one Noun, everyday, forever) and community-owned brand that makes a positive impact by 
-            <a href="https://nouns.world/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">funding ideas and fostering collaboration</a>. 
-            From collectors and technologists, to non-profits and brands, Nouns is for everyone.
+            is a forever-running art project (one Noun, everyday, forever) and a growing brand that
+            <a href="https://nouns.world/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">funds ideas and brings people together</a>. 
+            Whether you’re a collector, a technologist, a nonprofit, or a company, Nouns welcomes everyone.
           </p>
           <p class="text-gray-700 dark:text-gray-300 mb-4 text-lg leading-relaxed">
-            Nouns DAO is a decentralized autonomous organization on the Ethereum blockchain. Each day, a unique Noun is 
-            <a href="https://www.probe.wtf/en-US/nouns" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">generated and auctioned</a>
-            , with proceeds funding various community-driven projects. Members of the DAO, who own Nouns, 
+            Nouns DAO is a decentralized autonomous organization on Ethereum. Each day, a unique Noun is 
+            <a href="https://www.probe.wtf/en-US/nouns" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">generated and auctioned</a>,
+            with proceeds funding various community-driven projects. Members of the DAO, who own Nouns, 
             <a href="https://www.nouns.camp/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">participate in governance</a>
             and decision-making processes that shape the future of the Nouns ecosystem.
           </p>

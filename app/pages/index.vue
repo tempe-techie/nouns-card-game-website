@@ -110,7 +110,7 @@
             </div>
             <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-3 font-chewy">Download</h2>
             <p class="text-gray-600 dark:text-gray-400">
-              Get your free print-ready PDF
+              Download and print the game for free
             </p>
           </div>
         </NuxtLink>
