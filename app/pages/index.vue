@@ -144,10 +144,26 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'IndexPage'
-}
+<script setup>
+const route = useRoute()
+
+// Get the base URL - in production this should be your actual domain
+const requestURL = useRequestURL()
+const baseUrl = requestURL.origin
+
+useHead({
+  title: 'Home',
+  meta: [
+    { name: 'description', content: 'A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents! Free to download and print.' },
+    { property: 'og:title', content: 'Nouns: The Card Game' },
+    { property: 'og:description', content: 'A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents! Free to download and print.' },
+    { property: 'og:url', content: `${baseUrl}${route.path}` },
+    { property: 'og:image', content: `${baseUrl}/img/preview-fb.jpg` },
+    { name: 'twitter:title', content: 'Nouns: The Card Game' },
+    { name: 'twitter:description', content: 'A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents! Free to download and print.' },
+    { name: 'twitter:image', content: `${baseUrl}/img/preview.jpg` }
+  ]
+})
 </script>
 
 <style scoped>

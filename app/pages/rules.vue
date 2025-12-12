@@ -148,10 +148,26 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'RulesPage'
-}
+<script setup>
+const route = useRoute()
+
+// Get the base URL dynamically from the current request
+const requestURL = useRequestURL()
+const baseUrl = requestURL.origin
+
+useHead({
+  title: 'Game Rules',
+  meta: [
+    { name: 'description', content: 'Learn how to play Nouns: The Card Game. Complete rules including setup, turn structure, action cards, and how to win. Free strategic card game featuring Nouns characters.' },
+    { property: 'og:title', content: 'Game Rules - Nouns: The Card Game' },
+    { property: 'og:description', content: 'Learn how to play Nouns: The Card Game. Complete rules including setup, turn structure, action cards, and how to win. Free strategic card game featuring Nouns characters.' },
+    { property: 'og:url', content: `${baseUrl}${route.path}` },
+    { property: 'og:image', content: `${baseUrl}/img/preview-fb.jpg` },
+    { name: 'twitter:title', content: 'Game Rules - Nouns: The Card Game' },
+    { name: 'twitter:description', content: 'Learn how to play Nouns: The Card Game. Complete rules including setup, turn structure, action cards, and how to win. Free strategic card game featuring Nouns characters.' },
+    { name: 'twitter:image', content: `${baseUrl}/img/preview.jpg` }
+  ]
+})
 </script>
 
 <style scoped>
