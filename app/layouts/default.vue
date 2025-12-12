@@ -1,11 +1,15 @@
 <template>
   <div :class="isDark ? 'dark' : ''">
     <div class="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      <nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 shadow-sm">
+      <nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 shadow-lg backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center h-16">
-            <div class="flex items-center">
-              <NuxtLink to="/" class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white font-chewy">
+          <div class="flex justify-between items-center h-20">
+            <div class="flex items-center gap-3">
+              <div class="relative">
+                <img src="/img/characters/approved.svg" alt="Nouns Logo" class="w-12 h-12 animate-bounce-slow" />
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-lg opacity-30"></div>
+              </div>
+              <NuxtLink to="/" class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white font-chewy hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Nouns: The Card Game
               </NuxtLink>
             </div>
@@ -86,9 +90,25 @@
       <main>
         <slot />
       </main>
-      <footer class="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <p class="text-center text-gray-600 dark:text-gray-400">
+      <footer class="bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border-t border-gray-200 dark:border-gray-700 mt-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+          <div class="absolute bottom-4 left-8 animate-float-slow">
+            <img src="/img/characters/lucky.svg" alt="" class="w-24 h-24" />
+          </div>
+          <div class="absolute bottom-4 right-8 animate-float-medium-reverse">
+            <img src="/img/characters/birthday.svg" alt="" class="w-24 h-24" />
+          </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+          <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
+            <div class="flex gap-4">
+              <img src="/img/characters/approved.svg" alt="" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
+              <img src="/img/characters/shuffle.svg" alt="" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
+              <img src="/img/characters/crystal-ball.svg" alt="" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
+              <img src="/img/characters/thief.svg" alt="" class="w-12 h-12 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
+            </div>
+          </div>
+          <p class="text-center text-gray-600 dark:text-gray-400 font-motley">
             © 2025 Nouns: The Card Game. Developed by TempeTechie.eth
           </p>
         </div>
@@ -150,6 +170,45 @@ export default {
 /* Global styles */
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes float-medium-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(30px) rotate(5deg);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-medium-reverse {
+  animation: float-medium-reverse 9s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
 }
 </style>
 

@@ -1,61 +1,116 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-8 font-chewy">Cards</h1>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
+    <!-- Animated background characters -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+      <div class="absolute top-20 left-8 animate-float-slow">
+        <img src="/img/characters/approved.svg" alt="" class="w-32 h-32 opacity-20 dark:opacity-10" />
+      </div>
+      <div class="absolute top-40 right-8 animate-float-medium-reverse">
+        <img src="/img/characters/rejected.svg" alt="" class="w-32 h-32 opacity-20 dark:opacity-10" />
+      </div>
+      <div class="absolute bottom-40 left-12 animate-float-slow-reverse">
+        <img src="/img/characters/thief.svg" alt="" class="w-32 h-32 opacity-20 dark:opacity-10" />
+      </div>
+      <div class="absolute bottom-20 right-12 animate-float-medium">
+        <img src="/img/characters/lucky.svg" alt="" class="w-32 h-32 opacity-20 dark:opacity-10" />
+      </div>
+    </div>
 
-    <div class="mb-8">
-      <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4 font-chewy">Action Cards</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="text-center mb-12 relative z-10">
+      <div class="inline-block mb-6">
+        <div class="relative">
+          <img src="/img/characters/shuffle.svg" alt="Cards" class="w-24 h-24 md:w-32 md:h-32 mx-auto drop-shadow-2xl animate-bounce-slow" />
+          <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+        </div>
+      </div>
+      <h1 class="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 font-chewy bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+        Cards
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400 font-motley">
+        Discover all the action cards and value cards in the game
+      </p>
+    </div>
+
+    <div class="mb-16 relative z-10">
+      <div class="flex items-center gap-4 mb-8">
+        <img src="/img/characters/approved.svg" alt="Action Cards" class="w-16 h-16 animate-bounce-slow" />
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">Action Cards</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          v-for="card in actionCards"
+          v-for="(card, index) in actionCards"
           :key="card.name"
-          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700"
+          class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative"
         >
-          <div class="p-4 bg-gray-50 dark:bg-gray-700/50">
-            <div :class="['rounded-lg', isDark ? 'bg-white p-2' : '']">
+          <div class="absolute top-0 right-0 w-20 h-20 opacity-5 group-hover:opacity-15 transition-opacity">
+            <img :src="`/img/characters/${getCharacterName(card.name)}.svg`" alt="" class="w-full h-full" />
+          </div>
+          <div class="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700/50 dark:to-gray-800/50 relative">
+            <div class="absolute top-2 right-2 w-16 h-16 opacity-20">
+              <img :src="`/img/characters/${getCharacterName(card.name)}.svg`" alt="" class="w-full h-full" />
+            </div>
+            <div :class="['rounded-xl overflow-hidden shadow-lg', isDark ? 'bg-white p-2' : '']">
               <img
                 :src="`/img/cards/${card.image}`"
                 :alt="card.name"
-                class="w-full h-auto rounded-lg"
+                class="w-full h-auto rounded-xl group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
-          <div class="p-6">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3 font-chewy">{{ card.name }}</h3>
-            <p class="text-gray-700 dark:text-gray-300 mb-3 font-motley">{{ card.description }}</p>
-            <div v-if="card.optionalRule" class="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded border-l-4 border-blue-400">
-              <p class="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-1 font-chewy">Optional Rule:</p>
-              <p class="text-sm text-blue-800 dark:text-blue-200 font-motley">{{ card.optionalRule }}</p>
+          <div class="p-6 relative z-10">
+            <div class="flex items-center gap-3 mb-3">
+              <img :src="`/img/characters/${getCharacterName(card.name)}.svg`" alt="" class="w-10 h-10" />
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white font-chewy">{{ card.name }}</h3>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mb-3 font-motley leading-relaxed">{{ card.description }}</p>
+            <div v-if="card.optionalRule" class="mt-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-xl border-l-4 border-blue-400 shadow-sm">
+              <p class="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2 font-chewy">✨ Optional Rule:</p>
+              <p class="text-sm text-blue-800 dark:text-blue-200 font-motley leading-relaxed">{{ card.optionalRule }}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div>
-      <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4 font-chewy">Value Cards</h2>
-      <div class="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 mb-6">
-        <p class="text-gray-700 dark:text-gray-300 mb-4 font-motley">
-          The other cards are value cards which score points. These cards have nouns glasses (called "noggles") drawn on them. 
-          A 1 point card has 1 noggle glasses on it, a 2 points card has 2 noggles glasses, and so on. 
-          The person with the most points at the end, wins.
-        </p>
+    <div class="relative z-10">
+      <div class="flex items-center gap-4 mb-8">
+        <img src="/img/characters/lucky.svg" alt="Value Cards" class="w-16 h-16 animate-bounce-slow" />
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-chewy">Value Cards</h2>
+      </div>
+      <div class="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-700 mb-8 shadow-lg">
+        <div class="flex items-start gap-4">
+          <img src="/img/characters/crystal-ball.svg" alt="" class="w-12 h-12 flex-shrink-0" />
+          <div>
+            <p class="text-lg text-gray-700 dark:text-gray-300 font-motley leading-relaxed">
+              The other cards are value cards which score points. These cards have nouns glasses (called "noggles") drawn on them. 
+              A 1 point card has 1 noggle glasses on it, a 2 points card has 2 noggles glasses, and so on. 
+              The person with the most points at the end, wins.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
         <div
           v-for="card in valueCards"
           :key="card.name"
-          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700"
+          class="group bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border-2 border-gray-200 dark:border-gray-700 hover:border-green-400 dark:hover:border-green-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative"
         >
-          <div class="p-4 bg-gray-50 dark:bg-gray-700/50">
-            <div :class="['rounded-lg', isDark ? 'bg-white p-2' : '']">
+          <div class="absolute top-0 right-0 w-16 h-16 opacity-5 group-hover:opacity-15 transition-opacity">
+            <img src="/img/characters/lucky.svg" alt="" class="w-full h-full" />
+          </div>
+          <div class="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700/50 dark:to-gray-800/50">
+            <div :class="['rounded-xl overflow-hidden shadow-lg', isDark ? 'bg-white p-2' : '']">
               <img
                 :src="`/img/cards/${card.image}`"
                 :alt="card.name"
-                class="w-full h-auto rounded-lg"
+                class="w-full h-auto rounded-xl group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
-          <div class="p-6 text-center">
+          <div class="p-6 text-center relative z-10">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full mb-3 shadow-lg">
+              <span class="text-2xl font-bold text-white font-chewy">{{ card.points }}</span>
+            </div>
             <h3 class="text-xl font-bold text-gray-900 dark:text-white font-chewy">{{ card.name }}</h3>
             <p class="text-gray-600 dark:text-gray-400 mt-2 font-motley">{{ card.points }} point{{ card.points !== 1 ? 's' : '' }}</p>
           </div>
@@ -148,8 +203,90 @@ export default {
   methods: {
     updateDarkMode() {
       this.isDark = document.documentElement.classList.contains('dark')
+    },
+    getCharacterName(cardName) {
+      const nameMap = {
+        'Approved': 'approved',
+        'Rejected': 'rejected',
+        'Abstained': 'abstained',
+        'Thief': 'thief',
+        'Crystal Ball': 'crystal-ball',
+        'Lucky': 'lucky',
+        'Birthday': 'birthday',
+        'Shuffle': 'shuffle',
+        'Trash': 'trash',
+        'Fork': 'fork'
+      }
+      return nameMap[cardName] || 'approved'
     }
   }
 }
 </script>
+
+<style scoped>
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes float-medium {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(-5deg);
+  }
+}
+
+@keyframes float-slow-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(20px) rotate(-5deg);
+  }
+}
+
+@keyframes float-medium-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(30px) rotate(5deg);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 8s ease-in-out infinite;
+}
+
+.animate-float-slow-reverse {
+  animation: float-slow-reverse 7s ease-in-out infinite;
+}
+
+.animate-float-medium-reverse {
+  animation: float-medium-reverse 9s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+</style>
 
