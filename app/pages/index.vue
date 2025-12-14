@@ -35,7 +35,7 @@
           Nouns: The Card Game
         </h1>
         <p class="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in-delay">
-          A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents!
+          A fast, fun card game starring the iconic Nouns characters. Score points, play bold action moves, and surprise your opponents!
         </p>
         <div class="flex flex-wrap justify-center gap-4 mb-12">
           <div class="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-6 py-3 shadow-lg border border-gray-200 dark:border-gray-700">
@@ -154,13 +154,13 @@ const baseUrl = requestURL.origin
 useHead({
   title: 'Nouns: The Card Game',
   meta: [
-    { name: 'description', content: 'A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents! Free to download and print.' },
+    { name: 'description', content: 'A fast, fun card game starring the iconic Nouns characters. Score points, play bold action moves, and surprise your opponents! Free to download and print.' },
     { property: 'og:title', content: 'Nouns: The Card Game' },
-    { property: 'og:description', content: 'A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents! Free to download and print.' },
+    { property: 'og:description', content: 'A fast, fun card game starring the iconic Nouns characters. Score points, play bold action moves, and surprise your opponents! Free to download and print.' },
     { property: 'og:url', content: `${baseUrl}${route.path}` },
     { property: 'og:image', content: `${baseUrl}/img/preview-fb.jpg` },
     { name: 'twitter:title', content: 'Nouns: The Card Game' },
-    { name: 'twitter:description', content: 'A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents! Free to download and print.' },
+    { name: 'twitter:description', content: 'A fast, fun card game starring the iconic Nouns characters. Score points, play bold action moves, and surprise your opponents! Free to download and print.' },
     { name: 'twitter:image', content: `${baseUrl}/img/preview.jpg` }
   ]
 })

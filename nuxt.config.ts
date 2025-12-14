@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'A strategic card game featuring the iconic Nouns characters. Collect points, play action cards, and outsmart your opponents! Free to download and print.' },
+        { name: 'description', content: 'A fast, fun card game starring the iconic Nouns characters. Score points, play bold action moves, and surprise your opponents! Free to download and print.' },
         { name: 'keywords', content: 'Nouns, card game, Nouns DAO, board game, strategy game, printable game' },
         { name: 'author', content: 'Tempe Techie' },
         { name: 'robots', content: 'index, follow' },
