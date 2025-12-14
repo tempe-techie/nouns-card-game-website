@@ -100,7 +100,7 @@
                 </div>
               </div>
               <a
-                href="#"
+                href="/editions/nouns-card-game-deguma-edition.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="mt-4 md:mt-0 inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
