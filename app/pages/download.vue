@@ -60,13 +60,16 @@
               For PrintNinja, use the following settings:
             </p>
             <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 text-lg space-y-2">
-              <li>Go to <a href="https://calculator.printninja.com/card-game-quote" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">this page</a> (it's for at least 500 decks quantity).</li>
+              <li>Go to 
+                <a href="https://calculator.printninja.com/card-game-quote" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">this page</a> 
+                (for orders of at least 500 decks).
+              </li>
               <li>Deck Size: Poker (2.5" x 3.5")</li>
               <li>Card Count Per Deck: 52</li>
               <li>Card Stock: Blue Core Standard - 280gsm</li>
               <li>Card Backs: 1</li>
               <li>Finish Style: Gloss by default, then select Varnish (unless you want Lamination)</li>
-              <li>Deck Packaging: Tuck Box (unless you want just shrink wrapped - the price is the same)</li>
+              <li>Deck Packaging: Tuck Box (unless you prefer shrink wrap only - the price is the same)</li>
               <li>Tuck Box Packaging Details: You can leave defaults or pick whichever you want</li>
               <li>Packaging Add-Ons: Don't choose any</li>
               <li>Specialty Options: Don't choose any</li>
