@@ -84,29 +84,93 @@
         <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white font-motley">EDITIONS</h2>
       </div>
       <div class="space-y-8">
-
-        <!-- Deguma Edition -->
+        
+        <!-- Deguma Edition (borderless) -->
         <div
           class="group bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-xl p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden"
         >
           <div class="relative z-10">
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
-              <div class="flex items-start gap-4">
+
+              <!-- Div with card image -->
+              <div class="flex items-center gap-2 mr-4 w-full md:w-auto justify-center md:justify-start">
+                <div class="bg-white rounded-lg p-2 mb-4 md:mb-0">
+                  <img src="/img/edition-card/deguma-no-border-lucky.png" alt="Deguma Edition (no borders)" class="w-[150px] h-auto object-contain" />
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 md:mr-1">
                 <div>
-                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2 font-chewy">Deguma Edition</h3>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2 font-chewy">Deguma Edition (borderless)</h3>
                   <p class="text-gray-600 dark:text-gray-400 text-lg">
                     The first edition of Nouns: The Card Game, featuring character illustrations by deguma.eth in his distinctive style.
                   </p>
                 </div>
               </div>
-              <a
-                href="/editions/nouns-card-game-deguma-edition.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-4 md:mt-0 inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
-              >
-                Download PDF
-              </a>
+
+              <div class="mt-4 md:mt-0 flex flex-row md:flex-col gap-3">
+                <a
+                  href="/editions/nouns-card-game-deguma-edition.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
+                >
+                  Cards PDF
+                </a>
+                <span
+                  class="overflow-hidden opacity-60 cursor-not-allowed inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
+                >
+                  Tuckbox PDF
+                </span>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-gray-200 dark:border-gray-700 flex items-center gap-3">
+              <img src="/img/characters/fork.svg" alt="Designer" class="w-8 h-8 opacity-60" />
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                <span class="font-semibold font-chewy">Designer:</span> deguma.eth
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deguma Edition (borders) -->
+        <div
+          class="group bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-xl p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden"
+        >
+          <div class="relative z-10">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
+
+              <!-- Div with card image -->
+              <div class="flex items-center gap-2 mr-4 w-full md:w-auto justify-center md:justify-start">
+                <div class="bg-white rounded-lg p-2 mb-4 md:mb-0">
+                  <img src="/img/edition-card/deguma-with-border-lucky.png" alt="Deguma Edition (with borders)" class="w-[150px] h-auto object-contain" />
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 md:mr-1">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2 font-chewy">Deguma Edition (with borders)</h3>
+                  <p class="text-gray-600 dark:text-gray-400 text-lg">
+                    The same as the first edition of Nouns: The Card Game, but with a border layout on each card.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-4 md:mt-0 flex flex-row md:flex-col gap-3">
+                <a
+                  href="/editions/nouns-card-game-deguma-edition-borders.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
+                >
+                  Cards PDF
+                </a>
+                <span
+                  class="overflow-hidden opacity-60 cursor-not-allowed inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
+                >
+                  Tuckbox PDF
+                </span>
+              </div>
             </div>
             <div class="pt-6 border-t border-gray-200 dark:border-gray-700 flex items-center gap-3">
               <img src="/img/characters/fork.svg" alt="Designer" class="w-8 h-8 opacity-60" />
