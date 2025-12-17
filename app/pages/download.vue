@@ -162,9 +162,15 @@
               </div>
             </div>
             <div class="pt-6 border-t border-gray-200 dark:border-gray-700 flex items-center gap-3">
-              <img src="/img/characters/fork.svg" alt="Designer" class="w-8 h-8 opacity-60" />
+              <img src="/img/characters/fork.svg" alt="Illustrator" class="w-8 h-8 opacity-60" />
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                <span class="font-semibold font-chewy">Designer:</span> deguma.eth
+                <span class="font-semibold font-chewy">Illustrator:</span> <a href="https://farcaster.xyz/deguma" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 hover:underline font-semibold font-chewy">deguma.eth</a>
+              </p>
+            </div>
+            <div class="pt-6 flex items-center gap-3">
+              <img src="/img/characters/crystal-ball.svg" alt="PDF Layout" class="w-8 h-8 opacity-60" />
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                <span class="font-semibold font-chewy">PDF Layout:</span> <a href="https://www.fiverr.com/wpsjaya" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 hover:underline font-semibold font-chewy">Pavithra</a>
               </p>
             </div>
           </div>
@@ -210,9 +216,15 @@
               </div>
             </div>
             <div class="pt-6 border-t border-gray-200 dark:border-gray-700 flex items-center gap-3">
-              <img src="/img/characters/fork.svg" alt="Designer" class="w-8 h-8 opacity-60" />
+              <img src="/img/characters/fork.svg" alt="Illustrator" class="w-8 h-8 opacity-60" />
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                <span class="font-semibold font-chewy">Designer:</span> deguma.eth
+                <span class="font-semibold font-chewy">Illustrator:</span> <a href="https://farcaster.xyz/deguma" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 hover:underline font-semibold font-chewy">deguma.eth</a>
+              </p>
+            </div>
+            <div class="pt-6 flex items-center gap-3">
+              <img src="/img/characters/crystal-ball.svg" alt="PDF Layout" class="w-8 h-8 opacity-60" />
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                <span class="font-semibold font-chewy">PDF Layout:</span> <a href="https://www.fiverr.com/wpsjaya" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 hover:underline font-semibold font-chewy">Pavithra</a>
               </p>
             </div>
           </div>
@@ -242,7 +254,7 @@
             <div class="pt-6 border-t border-gray-200 dark:border-gray-700 flex items-center gap-3">
               <img src="/img/characters/shuffle.svg" alt="Designer" class="w-8 h-8 opacity-60" />
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                <span class="font-semibold font-chewy">Designer:</span> TBD
+                <span class="font-semibold font-chewy">Illustrator:</span> TBD
               </p>
             </div>
           </div>
