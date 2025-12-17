@@ -120,11 +120,45 @@
                 >
                   Cards PDF
                 </a>
-                <span
-                  class="overflow-hidden opacity-60 cursor-not-allowed inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
-                >
-                  Tuckbox PDF
-                </span>
+                <div class="relative">
+                  <button
+                    @click="showTuckboxDropdown = !showTuckboxDropdown"
+                    @blur="setTimeout(() => showTuckboxDropdown = false, 200)"
+                    class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
+                  >
+                    Tuckbox PDF
+                    <svg
+                      :class="{ 'rotate-180': showTuckboxDropdown }"
+                      class="w-5 h-5 transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    v-show="showTuckboxDropdown"
+                    class="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-xl shadow-2xl border-2 border-gray-200 dark:border-gray-700 overflow-hidden z-20"
+                  >
+                    <a
+                      href="/editions/tuckbox.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200"
+                    >
+                      Tuck Box PDF
+                    </a>
+                    <a
+                      href="/editions/guidelines.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200 border-t border-gray-200 dark:border-gray-700"
+                    >
+                      Guide Lines PDF
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="pt-6 border-t border-gray-200 dark:border-gray-700 flex items-center gap-3">
@@ -227,6 +261,9 @@ const baseUrl = requestURL.origin
 
 // Toggle state for PrintNinja settings
 const showPrintNinjaSettings = ref(false)
+
+// Toggle state for Tuckbox dropdown
+const showTuckboxDropdown = ref(false)
 
 useHead({
   title: 'Download and Print | Nouns: The Card Game',
