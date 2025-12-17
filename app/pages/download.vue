@@ -37,11 +37,14 @@
             <a href="https://www.printninja.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">PrintNinja</a>, 
             but people are free to take them to their local printer too.
           </p>
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            The game is issued under the CC0 license, so you are free to make changes to the PDF files as you see fit.
+          </p>
           <button
             @click="showPrintNinjaSettings = !showPrintNinjaSettings"
             class="mt-4 inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold font-chewy transition-colors"
           >
-            <span>{{ showPrintNinjaSettings ? 'Hide' : 'Show' }} PrintNinja Settings</span>
+            <span>{{ showPrintNinjaSettings ? 'Hide' : 'Show' }} PrintNinja Instructions</span>
             <svg
               :class="{ 'rotate-180': showPrintNinjaSettings }"
               class="w-5 h-5 transition-transform duration-200"
