@@ -56,6 +56,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
+
+          <!-- PrintNinja Instructions -->
           <div
             v-show="showPrintNinjaSettings"
             class="mt-4 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700"
@@ -82,6 +84,56 @@
               <li>Proofing: Electronic proof</li>
             </ul>
           </div>
+          <!-- END PrintNinja Instructions -->
+
+          <br />
+
+          <button
+            @click="showLudocardsSettings = !showLudocardsSettings"
+            class="mt-4 inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold font-chewy transition-colors"
+          >
+            <span>{{ showLudocardsSettings ? 'Hide' : 'Show' }} Ludocards Instructions</span>
+            <svg
+              :class="{ 'rotate-180': showLudocardsSettings }"
+              class="w-5 h-5 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Ludocards Instructions -->
+          <div
+            v-show="showLudocardsSettings"
+            class="mt-4 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700"
+          >
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-3 font-semibold font-chewy">
+              For Ludocards, use the following settings:
+            </p>
+            <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 text-lg space-y-2">
+              <li>First make sure to <a href="https://www.ludocards.com/my-data" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">
+                create an account</a> on the Ludocards website.
+              </li>
+              <li>To get the price quote for the cards (not the tuck box), go to 
+                <a href="https://www.ludocards.com/quote/custom-cards" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">this page</a> 
+              </li>
+              <li>Card Size: Ludocards Standard (62x86mm)</li>
+              <li>Number of cards / unit: 52</li>
+              <li>Paper Stock: 330gsm Black Core Paper</li>
+              <li>Leave everything else as default or none selected. Click on "Calculate prices" to get the price quotes for various quantities.</li>
+              <li>For tuck box quote and order, go to 
+                <a href="https://www.ludocards.com/quote/boxes" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">
+                  this page
+                </a>
+              </li>
+              <li>Box size: 64x88x18mm (2mm larger than the card size to allow for cards to fit inside)</li>
+              <li>You can leave everything else as default or none selected, unless you want some special coating or finish.</li>
+              <li>Click on "Calculate prices" to get the price quotes for various quantities.</li>
+            </ul>
+          </div>
+          <!-- END Ludocards Instructions -->
         </div>
       </div>
     </div>
@@ -350,6 +402,9 @@ const baseUrl = requestURL.origin
 
 // Toggle state for PrintNinja settings
 const showPrintNinjaSettings = ref(false)
+
+// Toggle state for Ludocards settings
+const showLudocardsSettings = ref(false)
 
 // Toggle state for Tuckbox dropdown
 const showTuckboxDropdownDeguma = ref(false)
