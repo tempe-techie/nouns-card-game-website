@@ -93,7 +93,7 @@
         
         <!-- Deguma Edition (borderless) -->
         <div
-          class="group bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-xl p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden"
+          class="group bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-xl p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-visible"
         >
           <div class="relative z-10">
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
@@ -142,7 +142,7 @@
                   </button>
                   <div
                     v-show="showTuckboxDropdownDeguma"
-                    class="absolute top-full right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-xl shadow-2xl border-2 border-gray-200 dark:border-gray-700 overflow-hidden z-20"
+                    class="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-2xl border-2 border-gray-200 dark:border-gray-700 overflow-hidden z-20"
                   >
                     <a
                       href="/editions/deguma-borderless/tuckbox-deguma-borderless.pdf"
@@ -150,7 +150,7 @@
                       rel="noopener noreferrer"
                       class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200"
                     >
-                      Tuck Box PDF
+                      Tuck Box PDF (PrintNinja)
                     </a>
                     <a
                       href="/editions/deguma-borderless/tuckbox-deguma-borderless-guide-layer.pdf"
@@ -158,7 +158,7 @@
                       rel="noopener noreferrer"
                       class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200 border-t border-gray-200 dark:border-gray-700"
                     >
-                      Guide Lines PDF
+                      Guide Lines PDF (PrintNinja)
                     </a>
                   </div>
                 </div>
@@ -181,7 +181,7 @@
 
         <!-- Deguma Edition (borders) -->
         <div
-          class="group bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-xl p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden"
+          class="group bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-xl p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-visible"
         >
           <div class="relative z-10">
             <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
@@ -230,7 +230,7 @@
                   </button>
                   <div
                     v-show="showTuckboxDropdownDegumaBorders"
-                    class="absolute top-full right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-xl shadow-2xl border-2 border-gray-200 dark:border-gray-700 overflow-hidden z-20"
+                    class="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-2xl border-2 border-gray-200 dark:border-gray-700 overflow-hidden z-20"
                   >
                     <a
                       href="/editions/deguma-with-borders/tuckbox-deguma-with-borders.pdf"
@@ -238,7 +238,7 @@
                       rel="noopener noreferrer"
                       class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200"
                     >
-                      Tuck Box PDF
+                      Tuck Box PDF (PrintNinja)
                     </a>
                     <a
                       href="/editions/deguma-with-borders/tuckbox-deguma-with-borders-guide-layer.pdf"
@@ -246,7 +246,15 @@
                       rel="noopener noreferrer"
                       class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200 border-t border-gray-200 dark:border-gray-700"
                     >
-                      Guide Lines PDF
+                      Guide Lines PDF (PrintNinja)
+                    </a>
+                    <a
+                      href="/editions/deguma-with-borders/tuckbox-ludocards-nouns-cards.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200 border-t border-gray-200 dark:border-gray-700"
+                    >
+                      Tuck Box PDF (Ludocards)
                     </a>
                   </div>
                 </div>
