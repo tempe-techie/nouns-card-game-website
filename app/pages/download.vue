@@ -33,8 +33,9 @@
         <img src="/img/characters/approved.svg" alt="Info" class="w-16 h-16 flex-shrink-0" />
         <div>
           <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-            Anyone can download the print-ready PDF of the card game for free. The recommended place to print the cards is 
+            Anyone can download the print-ready PDF of the card game for free. The recommended places to print the cards are 
             <a href="https://www.printninja.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">PrintNinja</a>, 
+            and <a href="https://www.ludocards.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold font-chewy">Ludocards</a>,
             but people are free to take them to their local printer too.
           </p>
           <p class="text-lg text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
@@ -203,14 +204,45 @@
               </div>
 
               <div class="mt-4 md:mt-0 flex flex-row md:flex-col gap-3">
-                <a
-                  href="/editions/deguma-with-borders/nouns-card-game-deguma-edition-borders.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
-                >
-                  Cards PDF
-                </a>
+                <div class="relative">
+                  <button
+                    @click="showCardsDropdownDegumaBorders = !showCardsDropdownDegumaBorders"
+                    @blur="setTimeout(() => showCardsDropdownDegumaBorders = false, 200)"
+                    class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg font-chewy text-lg text-center"
+                  >
+                    Cards PDF
+                    <svg
+                      :class="{ 'rotate-180': showCardsDropdownDegumaBorders }"
+                      class="w-5 h-5 transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div
+                    v-show="showCardsDropdownDegumaBorders"
+                    class="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-2xl border-2 border-gray-200 dark:border-gray-700 overflow-hidden z-20"
+                  >
+                    <a
+                      href="/editions/deguma-with-borders/nouns-card-game-deguma-edition-borders.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200"
+                    >
+                      Cards PDF (PrintNinja)
+                    </a>
+                    <a
+                      href="/editions/deguma-with-borders/deck-ludocards-nouns-cards-borders.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200 border-t border-gray-200 dark:border-gray-700"
+                    >
+                      Cards PDF (Ludocards)
+                    </a>
+                  </div>
+                </div>
                 <div class="relative">
                   <button
                     @click="showTuckboxDropdownDegumaBorders = !showTuckboxDropdownDegumaBorders"
@@ -322,6 +354,9 @@ const showPrintNinjaSettings = ref(false)
 // Toggle state for Tuckbox dropdown
 const showTuckboxDropdownDeguma = ref(false)
 const showTuckboxDropdownDegumaBorders = ref(false)
+
+// Toggle state for Cards dropdown
+const showCardsDropdownDegumaBorders = ref(false)
 
 useHead({
   title: 'Download and Print | Nouns: The Card Game',
