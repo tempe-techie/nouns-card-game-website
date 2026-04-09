@@ -333,7 +333,7 @@
                       Guide Lines PDF (PrintNinja)
                     </a>
                     <a
-                      href="/editions/deguma-with-borders/tuckbox-ludocards-nouns-cards.pdf"
+                      href="/editions/deguma-with-borders/tuckbox-ludocards-nouns-cards-with-borders.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="block px-6 py-4 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 dark:hover:from-blue-900/20 dark:hover:to-purple-900/20 font-chewy text-lg transition-colors duration-200 border-t border-gray-200 dark:border-gray-700"
